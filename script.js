@@ -12,7 +12,8 @@ function mk_freq_scale()
 	
 	var spacing = get_scale_mark_spacing(g_range);
 	//console.log(spacing);
-	marker_hz = Math.ceil(g_range.start/spacing.smallbw) * spacing.smallbw;
+	//marker_hz = Math.ceil(g_range.start/spacing.smallbw) * spacing.smallbw; remove Math.ceil
+	marker_hz = (g_range.start/spacing.smallbw) * spacing.smallbw;
 	text_y_pos = 22+10 + (kiwi_isFirefox()? 3:0);
 	var text_to_draw;
 	
