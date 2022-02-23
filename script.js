@@ -24,7 +24,7 @@ function mk_freq_scale()
 			pre_divide /= 1000;
 			decimals = 0;
 		}
-		text_to_draw = format_frequency(spacing.params.format+((f < 1e6)? 'kHz':'GHz'), f, pre_divide, decimals);
+		text_to_draw = format_frequency(spacing.params.format+((f < 1e6)? 'kHz':'MHz'), f, pre_divide, decimals);
 	}
 	
 	var last_large;
