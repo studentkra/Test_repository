@@ -39,7 +39,7 @@ function mk_freq_scale()
 		scale_ctx.beginPath();		
 		scale_ctx.moveTo(x, 22);
 
-		if ((marker_hz + 50000) % spacing.params.hz_per_large_marker == 0) {
+		if ((marker_hz + 60000) % spacing.params.hz_per_large_marker == 0) {
 
 			//large marker
 			if (isUndefined(first_large)) var first_large = marker_hz; 
