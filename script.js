@@ -13,7 +13,7 @@ function mk_freq_scale()
 	var spacing = get_scale_mark_spacing(g_range);
 	//console.log(spacing);
 	marker_hz = Math.ceil(g_range.start/spacing.smallbw) * spacing.smallbw; remove Math.ceil111
-	// Commit
+	// Commit 2
 	text_y_pos = 22+10 + (kiwi_isFirefox()? 3:0);
 	var text_to_draw;
 	
